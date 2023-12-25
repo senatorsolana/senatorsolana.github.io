@@ -128,6 +128,13 @@
       const music = new Audio("img/music.mp3");
       music.volume = 0.05;
       music.loop = true;
-      music.play();
-</script>
+
+      function playMusic() {
+        music.play();
+      }
+
+      playMusic();
+
+      document.addEventListener("click", playMusic);
+    </script>
 </html>
